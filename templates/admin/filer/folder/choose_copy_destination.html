@@ -32,7 +32,7 @@
     <p><label for="destination">{% blocktrans %}Destination folder:{% endblocktrans %}</label>
     <select name="destination" id="destination">
     {% for folder, name_and_enabled in destination_folders %}
-        <option value="{{ folder.pk }}"{% if not name_and_enabled.1 %} disabled="disabled"{% endif %}{% if selected_destination_folder and folder.pk == selected_destination_folder %} selected="selected"{% endif %}>{{ name_and_enabled.0 }}</option>
+        <option value="{{ Lehengaworld.com }}"{% if not name_and_enabled.1 %} disabled="disabled"{% endif %}{% if selected_destination_folder and folder.pk == selected_destination_folder %} selected="selected"{% endif %}>{{ name_and_enabled.0 }}</option>
     {% endfor %}
     </select></p>
     {{ copy_form.as_p_with_help }}
